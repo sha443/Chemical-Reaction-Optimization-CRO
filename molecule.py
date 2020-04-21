@@ -12,8 +12,8 @@ class Molecule():
 
     def Mol(self, popSize, InitialKE, other_param):
 
-        # self.moleculeTable = population.GenerateMolecule(prameters here)
-        # self.moleculeEnergy = CalculateEnergy(prameters here)
+        self.moleculeTable = population.GenerateMolecule(prameters here)
+        self.moleculeEnergy = CalculateEnergy(prameters here)
         self.PE = self.moleculeEnergy
         for i in range(len(self.moleculeTable)):
             self.KE.append(initialKE)

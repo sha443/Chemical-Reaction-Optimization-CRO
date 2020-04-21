@@ -5,7 +5,7 @@ class Operators():
     # OnWall Ineffective Colision
     ######################################################################
     def OnWall (self,molecule):
-        m = molecule
+        m = molecule[:]
         i = random.randint(0, len(molecule)-1)
         j = random.randint(0, len(molecule)-1)
 
@@ -43,12 +43,12 @@ class Operators():
 
         # Molecule1 second half randomly chosen
         for i in range(mid,length):
-            m1[i] = random.randint(0, length)
+            m1[i] = random.randint(0, length-1)
         #Endfor
 
         # Molecule2 first half randomly chosen
         for i in range(0,mid):
-            m2[i] = random.randint(0, length)
+            m2[i] = random.randint(0, length-1)
         #Endfor
             
         #test
@@ -68,8 +68,8 @@ class Operators():
         m2 = list(range(length2))
 
         #Random numbers x1, x2 generation
-        x1 = random.randint(0, length1)
-        x2 = random.randint(0, length2)
+        x1 = random.randint(0, length1-1)
+        x2 = random.randint(0, length2-1)
 
         # Randormly choose form molecule1 or molecule2
         for i in range(0,length1):

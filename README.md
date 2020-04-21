@@ -1,13 +1,16 @@
 # CRO.py
 
-The real coded CRO class with dependent classes in python 3.
+The Chemical Reaction Optimization Algorithm sketch in python 3
 
-# Classes
+# Classes Includes
 
 1. CRO
 2. Molecule
 3. Operators
 4. Main
+
+# How to use?
+This repository provides the blueprint of the Chemical Reaction Optimization algorithm. One's has to implement the relative class and functions e.g. Population generation and energy calculation.
 
 # Debug & Contact:
 
